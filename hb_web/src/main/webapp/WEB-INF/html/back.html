@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>找回密码</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="../css/ydui.css?rev=@@hash"/>
+    <link rel="stylesheet" href="../css/demo.css"/>
+    <script src="../js/ydui.flexible.js"></script>
+</head>
+<body style="background-color: #FFFFFF;">
+<section class="g-flexview">
+
+    <header class="m-navbar">
+        <a href="javascript:history.go(-1);" class="navbar-item"><i class="back-ico"></i></a>
+        <div class="navbar-center"><span class="navbar-title"></span></div>
+    </header>
+    <aside class="demo-tip" style="text-align: center;padding-top: 10%;padding-bottom: 10%;">
+           <span style="font-size: 60px;">Make</span><br><br><br>
+    		<span style="font-size: 60px;">Money</span>    
+    </aside>
+    <section class="g-scrollview">
+        <div class="m-cell">
+        	<div class="cell-item">
+                <div class="cell-left"><span class="cell-icon"><img src="../img/yh.png" /></span></div>
+                <div class="cell-right">
+                    <input type="text"  class="cell-input" placeholder="请输入用户名" autocomplete="off" />
+                </div>
+            </div>
+            <div class="cell-item">
+                <div class="cell-left"><i class="cell-icon demo-icons-phone"></i></div>
+                <div class="cell-right">
+                    <input type="number" pattern="[0-9]*" class="cell-input" placeholder="请输入手机号码" autocomplete="off" />
+                </div>
+            </div>
+            <div class="cell-item">
+                <div class="cell-left"><i class="cell-icon icon-verifycode"></i></div>
+                <div class="cell-right">
+                    <input type="number" pattern="[0-9]*" class="cell-input" placeholder="请输入验证码" autocomplete="off" />
+                    <a href="javascript:;" class="btn btn-warning" id="J_GetCode">获取短信验证码</a>
+                </div>
+            </div>
+            <div class="cell-item">
+                <div class="cell-left"><span class="cell-icon"><img src="../img/pasword.png" /></span></div>
+                <div class="cell-right">
+                    <input type="password"  class="cell-input" placeholder="请输入新密码" autocomplete="off" />
+                </div>
+            </div>
+        </div>
+		<div class="m-button">
+            <button type="submit" class="btn-block btn-primary">修改密码</button>
+      </div>	
+    </section>
+
+</section>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../js/ydui.js"></script>
+</body>
+</html>

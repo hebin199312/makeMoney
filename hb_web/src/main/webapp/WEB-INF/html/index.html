@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="css/ydui.css?rev=@@hash" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<script src="js/ydui.flexible.js"></script>
+	</head>
+
+	<body>
+		<section class="g-flexview">
+
+			<!--
+            	作者：offline
+            	时间：2018-03-29
+            	描述：轮播图
+            -->
+			<div class="g-scrollview">
+				<div class="m-slider" id="J_Slider">
+					<div class="slider-wrapper">
+						<div class="slider-item">
+							<a href="#">
+								<img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+							</a>
+						</div>
+						<div class="slider-item">
+							<a href="#">
+								<img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+							</a>
+						</div>
+						<div class="slider-item">
+							<a href="#">
+								<img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="slider-pagination"></div>
+					<!-- 分页标识 -->
+				</div>
+				<div class="m-grids-3">
+					<a class="grids-item" href="html/cell.html">
+						<div class="grids-icon">
+							<i class="icon-phone3" style="color: #FF685E;"></i>
+						</div>
+						<div class="grids-txt">辅助注册</div>
+					</a>
+					<a class="grids-item" href="html/icons.html">
+						<div class="grids-icon">
+							<i class="icon-weixin" style="color: #3CC51E;"></i>
+						</div>
+						<div class="grids-txt">微信解封</div>
+					</a>
+					<a class="grids-item" href="html/button.html">
+						<div class="grids-icon">
+							<i class="icon-ucenter-outline" style="color:#FF685E;"></i>
+						</div>
+						<div class="grids-txt">个人资料</div>
+					</a>
+					<a class="grids-item" href="html/dialog.html">
+						<div class="grids-icon">
+							<i class="icon-feedback" style="color: #8B78E2;"></i>
+						</div>
+						<div class="grids-txt">订单记录</div>
+					</a>
+
+					<a class="grids-item" href="html/grids.html">
+						<div class="grids-icon">
+							<i class="icon-verifycode" style="color: #FF685E;"></i>
+						</div>
+						<div class="grids-txt">提现记录</div>
+					</a>
+					<a class="grids-item" href="html/list.html">
+						<div class="grids-icon">
+							<i class="demo-icons-list"></i>
+						</div>
+						<div class="grids-txt">资金明细</div>
+					</a>
+					<a class="grids-item" href="html/badge.html">
+						<div class="grids-icon">
+							<i class="icon-footmark" style="color: #FF8D20;"></i>
+						</div>
+						<div class="grids-txt">邀请记录</div>
+					</a>
+					<a class="grids-item" href="html/asidebar.html">
+						<div class="grids-icon">
+							<i class="demo-icons-tabbar"></i>
+						</div>
+						<div class="grids-txt">推广链接</div>
+					</a>
+					<a class="grids-item" href="html/tabs.html">
+						<div class="grids-icon">
+							<i class="icon-share2" style="color: #FF685E;"></i>
+						</div>
+						<div class="grids-txt">注销登陆</div>
+					</a>
+
+				</div>
+
+			</div>
+			<!--
+            	作者：offline
+            	时间：2018-03-29
+            	描述：底部到货栏
+            -->
+			<footer class="m-tabbar">
+				<a href="#" class="tabbar-item">
+					<span class="tabbar-icon">
+						  <i class="icon-home-outline"></i>
+					</span>
+					<span class="tabbar-txt">首页</span>
+				</a>
+				<a href="#" class="tabbar-item">
+					<span class="tabbar-icon">
+						            <i class="icon-like-outline"></i>
+						        	</span>
+					<span class="tabbar-txt">客服</span>
+				</a>
+				<a href="#" class="tabbar-item tabbar-active">
+					<span class="tabbar-icon">
+			            <i class="icon-ucenter"></i>
+			            <span class="badge badge-danger">2</span>
+					</span>
+					<span class="tabbar-txt">个人中心</span>
+				</a>
+			</footer>
+		</section>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="js/ydui.js"></script>
+		<script>
+			(!YDUI.device.isMobile && navigator.userAgent.indexOf('Firefox') >= 0) && YDUI.dialog.alert('PC端请使用谷歌内核浏览器查看！');
+		</script>
+		<!--[if IE]>
+			轮播设置
+		<![endif]-->
+		<script>
+			$('#J_Slider').slider({
+				speed: 200,
+				autoplay: 2000,
+				lazyLoad: true
+			});
+		</script>
+	</body>
+
+</html>

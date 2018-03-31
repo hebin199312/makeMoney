@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+
+<!-- 配置注解去哪里扫描 -->
+<context:component-scan base-package="com.hb.action"></context:component-scan>
+
+<!-- 配置springmvc的3大组件 -->
+<!--相当于 配置了 映射器和 适配器 -->
+<mvc:annotation-driven></mvc:annotation-driven>																							
+																									
+<!-- 配置视图解析器 -->																									
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 路径前缀 -->																																														
+		<property name="prefix" value="/WEB-INF/" />
+		<!-- 路径后缀 -->																																														
+		<property name="suffix" value=".jsp" />																							
+</bean>																								
+
+<!-- 配置异常解析器  传统异常处理第二种-->
+<!-- <bean class="com.hb.web.common.GlobalExceptionResolver"/> -->
+<!-- 解决静态资源不能正常访问的问题 js png 视频等 -->
+<mvc:default-servlet-handler/>	
+
+<!-- 支持上传文件 -->  																												
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">																												
+    	<!-- 设定默认编码 -->																											
+		<property name="defaultEncoding" value="UTF-8"></property>																										
+		<!-- 设定文件上传的最大值5MB，5*1024*1024 -->																										
+		<property name="maxUploadSize" value="5242880"></property>																										
+    </bean> 																												
+
+
+<!--当访问根目录的时候 直接跳到WEB-INF 的login页面 -->	
+<mvc:view-controller path="/" view-name="index"/>
+</beans>

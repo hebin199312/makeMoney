@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户登陆</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="../css/ydui.css?rev=@@hash"/>
+    <link rel="stylesheet" href="../css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/verify.css">
+    <script src="../js/ydui.flexible.js"></script>
+</head>
+<body style="background-color: #FFFFFF;">
+<section class="g-flexview">
+    <aside class="demo-tip" style="text-align: center;padding-top: 10%;padding-bottom: 10%;">
+           <span style="font-size: 60px;">Make</span><br><br><br>
+    		<span style="font-size: 60px;">Money</span>    
+    </aside>
+    <section class="g-scrollview">
+    <form action="" method="post" id="ff">
+        <div class="m-cell">
+        	<div class="cell-item">
+                <div class="cell-left"><span class="cell-icon"><img src="../img/yh.png" /></span></div>
+                <div class="cell-right">
+                    <input type="text" name="username" id="username" class="cell-input" placeholder="请输入用户名" autocomplete="off" />
+                </div>
+            </div>
+            <div class="cell-item">
+                <div class="cell-left"><span class="cell-icon"><img src="../img/pasword.png" /></span></div>
+                <div class="cell-right">
+                    <input type="password" name="password" id="password" class="cell-input" placeholder="请输入密码" autocomplete="off" />
+                </div>
+            </div>
+        </div>
+       <!-- <h3>滑动验证码</h3>-->
+        <center><div id="mpanel1"></div></center>
+
+		<div class="m-button">
+            <input id="login" type="submit" value="登录" class="btn-block btn-primary"/>
+       </div>
+   </form>
+       <div style="padding: 20px;font-size: 13px;">
+       	<a href="/toreg" style="float: right;">注册用户</a>
+		<a href="back.html">忘记密码</a>
+       </div>
+	
+    </section>
+
+</section>
+
+<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script src="../js/jquery.min.js" ></script>
+<script src="../js/ydui.js"></script>
+
+<script src="../js/verify.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript" src="../js/login.js" ></script>
+
+</body>
+</html>

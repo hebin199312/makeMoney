@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>辅助注册</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="../css/ydui.css?rev=@@hash"/>
+    <link rel="stylesheet" href="../css/demo.css"/>
+    <script src="../js/ydui.flexible.js"></script>
+</head>
+<body>
+<section class="g-flexview">
+
+    <header class="m-navbar">
+        <a href="../index.html" class="navbar-item"><i class="back-ico"></i></a>
+        <div class="navbar-center"><span class="navbar-title">辅助注册</span></div>
+    </header>
+
+    <section class="g-scrollview">
+        <div class="m-celltitle">带图标的</div>
+        <div class="m-button">
+            <button type="button" id="J_GetCode" class="btn-block btn-primary">获取任务</button>
+        </div>
+        <div style="width: 97%;margin-left: auto;margin-right: auto;">
+        	<div class="m-cell" style="margin-top: 25px;">
+            <div class="cell-item">
+                <div class="cell-left"><i class="cell-icon icon-weixin"></i></div>
+                <div class="cell-right">
+                    <input type="number" pattern="[0-9]*" class="cell-input" placeholder="新手请看教程，接单不做封帐户" autocomplete="off" />
+                    <a href="javascript:;" class="btn btn-warning">复制号码</a>
+                </div>
+            </div>
+        </div>
+        </div>
+		<div class="m-button">
+            <button type="button" class="btn-block btn-primary">完成任务</button>
+        </div>
+        <div class="m-button">
+           <button type="submit" class="btn-block btn-danger">取消任务</button>
+        </div>
+
+    </section>
+
+</section>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../js/ydui.js"></script>
+<script>
+    !function (win, $) {
+
+        var dialog = win.YDUI.dialog;
+
+        var $getCode = $('#J_GetCode');
+
+        // 定义参数
+        $getCode.sendCode({
+            disClass: 'btn-disabled', // 禁用按钮样式【必填】
+            secs: 300, // 倒计时时长 [可选，默认：60秒]
+            run: false,// 是否初始化自动运行 [可选，默认：false]
+            runStr: '{%s}秒后重新获取',// 倒计时显示文本 [可选，默认：58秒后重新获取]
+            resetStr: '获取新任务'// 倒计时结束后按钮显示文本 [可选，默认：重新获取验证码]
+        });
+
+        $getCode.on('click', function () {
+            var $this = $(this);
+            dialog.loading.open('获取任务中...');
+            // ajax 成功发送验证码后调用【start】
+            setTimeout(function () { //模拟ajax发送
+                dialog.loading.close();
+                $this.sendCode('start');
+                dialog.toast('获取成功', 'success', 1500);
+            }, 800);
+        });
+
+    }(window, jQuery);
+</script>
+</body>
+</html>
