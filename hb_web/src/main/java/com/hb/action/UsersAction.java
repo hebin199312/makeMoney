@@ -60,4 +60,10 @@ public class UsersAction {
 		session.setAttribute("users", result.getData());
 		return result;
 	}
+	//ÍË³öµÇÂ¼
+	@RequestMapping("/logout")
+	public String logout(HttpSession session)throws Exception{
+		session.invalidate();//Çå³ýsession
+		return "login";
+	}
 }

@@ -6603,3 +6603,327 @@ Mapped URL path [/toreg] onto handler of type [class org.springframework.web.ser
 
 [INFO ] 2018-03-30 19:23:35,122 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
 FrameworkServlet 'springDispatcherServlet': initialization completed in 473 ms
+
+
+[INFO ] 2018-03-31 11:36:08,699 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-03-31 11:36:08,791 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Mar 31 11:36:08 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-31 11:36:08,829 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [beans.xml]
+
+
+[INFO ] 2018-03-31 11:36:09,313 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [db.properties]
+
+
+[INFO ] 2018-03-31 11:36:09,320 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 11:36:10,012 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 1310 ms
+
+
+[INFO ] 2018-03-31 11:36:10,298 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'springDispatcherServlet': initialization started
+
+
+[INFO ] 2018-03-31 11:36:10,300 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 11:36:10 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 11:36:10,301 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [springmvc.xml]
+
+
+[INFO ] 2018-03-31 11:36:10,409 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 11:36:10,538 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/reg],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.reg(com.hb.entity.Users)
+
+
+[INFO ] 2018-03-31 11:36:10,539 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/login],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.login(com.hb.entity.Users,javax.servlet.http.HttpSession)
+
+
+[INFO ] 2018-03-31 11:36:10,540 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/findUsersName]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.findUsersName(java.lang.String)
+
+
+[INFO ] 2018-03-31 11:36:10,634 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 11:36:10 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 11:36:10,684 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 11:36:10 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 11:36:10,754 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2018-03-31 11:36:10,798 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:328)
+Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 11:36:10,799 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toindex] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 11:36:10,799 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toreg] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 11:36:10,839 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'springDispatcherServlet': initialization completed in 541 ms
+
+
+[INFO ] 2018-03-31 14:02:27,063 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-03-31 14:02:27,163 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Mar 31 14:02:27 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-31 14:02:27,209 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [beans.xml]
+
+
+[INFO ] 2018-03-31 14:02:27,552 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [db.properties]
+
+
+[INFO ] 2018-03-31 14:02:27,560 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 14:02:28,157 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 1091 ms
+
+
+[INFO ] 2018-03-31 14:02:28,408 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'springDispatcherServlet': initialization started
+
+
+[INFO ] 2018-03-31 14:02:28,411 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:02:28 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:02:28,412 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [springmvc.xml]
+
+
+[INFO ] 2018-03-31 14:02:28,506 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 14:02:28,620 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/reg],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.reg(com.hb.entity.Users)
+
+
+[INFO ] 2018-03-31 14:02:28,621 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/login],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.login(com.hb.entity.Users,javax.servlet.http.HttpSession)
+
+
+[INFO ] 2018-03-31 14:02:28,622 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/findUsersName]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.findUsersName(java.lang.String)
+
+
+[INFO ] 2018-03-31 14:02:28,708 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:02:28 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:02:28,755 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:02:28 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:02:28,830 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2018-03-31 14:02:28,858 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:328)
+Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:02:28,858 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toindex] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:02:28,859 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toreg] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:02:28,897 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'springDispatcherServlet': initialization completed in 489 ms
+
+
+[INFO ] 2018-03-31 14:03:56,120 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-03-31 14:03:56,212 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Mar 31 14:03:56 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-31 14:03:56,251 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [beans.xml]
+
+
+[INFO ] 2018-03-31 14:03:56,614 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [db.properties]
+
+
+[INFO ] 2018-03-31 14:03:56,622 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 14:03:57,269 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 1147 ms
+
+
+[INFO ] 2018-03-31 14:03:57,514 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'springDispatcherServlet': initialization started
+
+
+[INFO ] 2018-03-31 14:03:57,518 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:03:57 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:03:57,520 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [springmvc.xml]
+
+
+[INFO ] 2018-03-31 14:03:57,626 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 14:03:57,758 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/login],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.login(com.hb.entity.Users,javax.servlet.http.HttpSession)
+
+
+[INFO ] 2018-03-31 14:03:57,759 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/reg],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.reg(com.hb.entity.Users)
+
+
+[INFO ] 2018-03-31 14:03:57,760 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/findUsersName]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.findUsersName(java.lang.String)
+
+
+[INFO ] 2018-03-31 14:03:57,853 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:03:57 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:03:57,910 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:03:57 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:03:57,979 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2018-03-31 14:03:58,005 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:328)
+Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:03:58,006 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toindex] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:03:58,006 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toreg] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:03:58,046 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'springDispatcherServlet': initialization completed in 531 ms
+
+
+[INFO ] 2018-03-31 14:08:57,830 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-03-31 14:08:57,928 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Mar 31 14:08:57 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-31 14:08:57,973 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [beans.xml]
+
+
+[INFO ] 2018-03-31 14:08:58,359 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [db.properties]
+
+
+[INFO ] 2018-03-31 14:08:58,369 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 14:08:58,962 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 1130 ms
+
+
+[INFO ] 2018-03-31 14:08:59,173 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'springDispatcherServlet': initialization started
+
+
+[INFO ] 2018-03-31 14:08:59,176 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:08:59 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:08:59,177 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [springmvc.xml]
+
+
+[INFO ] 2018-03-31 14:08:59,291 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-03-31 14:08:59,408 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/login],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.login(com.hb.entity.Users,javax.servlet.http.HttpSession)
+
+
+[INFO ] 2018-03-31 14:08:59,409 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/logout]}" onto public java.lang.String com.hb.action.UsersAction.logout(javax.servlet.http.HttpSession) throws java.lang.Exception
+
+
+[INFO ] 2018-03-31 14:08:59,410 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/reg],methods=[POST]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.reg(com.hb.entity.Users)
+
+
+[INFO ] 2018-03-31 14:08:59,411 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/findUsersName]}" onto public com.hb.common.HRResult com.hb.action.UsersAction.findUsersName(java.lang.String)
+
+
+[INFO ] 2018-03-31 14:08:59,501 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:08:59 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:08:59,547 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Sat Mar 31 14:08:59 CST 2018]; parent: Root WebApplicationContext
+
+
+[INFO ] 2018-03-31 14:08:59,617 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[INFO ] 2018-03-31 14:08:59,648 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:328)
+Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:08:59,649 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toindex] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:08:59,649 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/toreg] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+
+
+[INFO ] 2018-03-31 14:08:59,690 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'springDispatcherServlet': initialization completed in 517 ms
