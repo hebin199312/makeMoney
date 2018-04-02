@@ -19,7 +19,7 @@
 		<!-- 路径前缀 -->																																														
 		<property name="prefix" value="/WEB-INF/" />
 		<!-- 路径后缀 -->																																														
-		<property name="suffix" value=".jsp" />																							
+		<property name="suffix" value=".html" />																							
 </bean>																								
 
 <!-- 配置异常解析器  传统异常处理第二种-->
@@ -37,5 +37,7 @@
 
 
 <!--当访问根目录的时候 直接跳到WEB-INF 的login页面 -->	
-<mvc:view-controller path="/" view-name="index"/>
+<mvc:view-controller path="/" view-name="login"/>
+<mvc:view-controller path="/toindex" view-name="html/index"/>
+<mvc:view-controller path="/toreg" view-name="html/register"/>
 </beans>

@@ -5,13 +5,13 @@
     <welcome-file>/</welcome-file>
   </welcome-file-list>
  <!-- 过滤不登录直接访问后台页面 -->
-  <filter>
+	<filter>
 		<filter-name>LoginFilter</filter-name>
 		<filter-class>com.hb.filter.LoginFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>LoginFilter</filter-name>
-		<url-pattern>/user/toindex</url-pattern>
+		<url-pattern>/toindex</url-pattern>
 	</filter-mapping>
 
 	<!-- 监听器 web一启动读取spring 的配置 -->
