@@ -6,8 +6,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.ibatis.annotations.Param;
-import org.junit.runners.Parameterized.Parameters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,9 +25,9 @@ public class UsersAction {
 	private UsersService usersService;
 	
 	/**
-	 * ×¢²á
+	 * ×¢ï¿½ï¿½
 	 *@author: hebin
-	 *@date:2018Äê3ÔÂ29ÈÕ
+	 *@date:2018ï¿½ï¿½3ï¿½ï¿½29ï¿½ï¿½
 	 */
 	@RequestMapping(value="/reg",method=RequestMethod.POST)
 	@ResponseBody
@@ -38,9 +36,9 @@ public class UsersAction {
 	}
 	
 	/**
-	 * ²éÑ¯¸ÃÓÃ»§ÊÇ·ñ±»×¢²á
+	 * ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ç·ï¿½×¢ï¿½ï¿½
 	 *@author: hebin
-	 *@date:2018Äê3ÔÂ30ÈÕ
+	 *@date:2018ï¿½ï¿½3ï¿½ï¿½30ï¿½ï¿½
 	 */
 	@RequestMapping(value="/findUsersName")
 	@ResponseBody
@@ -49,9 +47,9 @@ public class UsersAction {
 	}
 	
 	/**
-	 * µÇÂ¼
+	 * ï¿½ï¿½Â¼
 	 *@author: hebin
-	 *@date:2018Äê3ÔÂ30ÈÕ,method=RequestMethod.POST
+	 *@date:2018ï¿½ï¿½3ï¿½ï¿½30ï¿½ï¿½,method=RequestMethod.POST
 	 */
 	@RequestMapping(value="/login",method=RequestMethod.POST)
 	public @ResponseBody HRResult login(Users users,HttpSession session) {
@@ -60,10 +58,10 @@ public class UsersAction {
 		session.setAttribute("users", result.getData());
 		return result;
 	}
-	//ÍË³öµÇÂ¼
+	//ï¿½Ë³ï¿½ï¿½ï¿½Â¼
 	@RequestMapping("/logout")
 	public String logout(HttpSession session)throws Exception{
-		session.invalidate();//Çå³ýsession
+		session.invalidate();//ï¿½ï¿½ï¿½session
 		return "login";
 	}
 }
