@@ -1,4 +1,4 @@
-var flag=false;
+/*var flag=false;
 $('#mpanel1').slideVerify({
     type : 1,		//类型
     vOffset : 5,	//误差量，根据需求自行调整
@@ -16,7 +16,7 @@ $('#mpanel1').slideVerify({
         flag=false;
     }
 
-});
+});*/
 
 //点击登录的时候
 $("#login").click(function(){
@@ -42,11 +42,12 @@ $("#login").click(function(){
     var url = "/login";
     HrManager.sendAjaxPost(url,{username:username,password:password},function (pdata) {
         if (pdata.resultCode==200) {
-             window.location.href = "/toindex";
+        	window.location.href = "/toindex";
         }else{
             //不带图标提示框
-            alert("账号或密码错误");
-
+            //alert("账号或密码错误");
+        	 /* 不带图标提示框 */
+        	YDUI.dialog.toast("账号或密码错误", 'none', 1000);
             return false;
         }
     });
